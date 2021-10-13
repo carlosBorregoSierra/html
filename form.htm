@@ -26,20 +26,111 @@
                 <form action="">
                     <div class="row">
                         <div class="col-12 col-sm-6 md-3">
-                            <div class="class">
-                                <label for="nombre">Grupo CSC</label>
+                            
+                                <label for="nombre">Nombre</label>
                                 <input type="text" id="nombre" name="nombre" class="form-control">
 
-                            </div>
-                        </div class="col-12 col-sm-6 mb-3">
-                            <label for="apellidos">Apellidos</label>
-                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-12 col-sm-6 mb-3">
+                            <label for="apellido">Apellido</label>
+                             <input type="text" class="form-control">
+                        </div>
+
                     </div>
-                    <div class="mb-3"></div>
+                    <div class="mb-3">
                         <label for="correo">Correo <span class="text-muted">(Opcional)</span></label>
                         <input type="email" class="form-control" id="correo" name="correo">
-                        
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo">Dirección<span class="text-muted">(Opcional)</span></label>
+                        <input type="text" class="form-control" id="direccion" name="direccion">
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-4 mb-3">
+                            <label for="pais">País</label>
+                            <select name="pais" id="pais" class="form-control custom-select d-block w-100">
+                                <option value="">Seleccionar país</option>
+                                <option value="col">Colombia</option>
+                                <option value="ar">Argentina</option>
+                                <option value="br">Brasil</option>
+                            </select>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-12 col-sm-4 mb-3">
+                                <label for="pais">Localidad</label>
+                                <select name="pais" id="pais" class="form-control custom-select d-block w-100">
+                                    <option value="">Seleccionar localidad</option>
+                                    <option value="col">Localidad 1</option>
+                                    <option value="ar">Localidad 2</option>
+                                    <option value="br">Localidad 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 mb-3">
+                            <label for="codigo postal">Código postal</label>
+                            <input class="form-control" type="text" id="codigo-postal" name="codigo-postal">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 mb-3">
+                            <label for="numero-tarjeta">Numero de tarjeta</label>
+                            <input type="text" id="numero-tarjeta" class="form-control">
+                        </div>
+                        <div class="col-12 col-sm-6 mb-3">
+                            <label for="nombre-tarjeta">Nombre en la tarjeta</label>
+                            <input type="text" id="nombre-tarjeta" class="form-control">
+                            <small class="text-muted">Nombre completo como se muestra en la tarjeta</small>
+                        </div>        
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-sm-4 mb-3">
+                            <label for="tarjeta-cvv">CVV</label>
+                            <input type="text" id="tarjeta-cvv" class="form-control">
+                        </div>
+                    </div>
+                    <hr class="mb-4"/>
+                    <button type="submit" class="btn btn-block btn-md btn-primay">Continuar con el pago</button>
                 </form>
+            </div>
+            <div class="col-12 col-md-4 order-1 order-md-2">
+                <h4 class="mb-3 d-flex justify-content-between align-items-center">
+                  <span class="text-muted">Tu Carrito</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between">
+                      <div>
+                        <h6 class="my-0">item1</h6>
+                        <small class="text-muted">descripción</small>
+                      </div>
+                      <span class="text-muted">10€</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                      <div>
+                        <h6 class="my-0">item2</h6>
+                        <small class="text-muted">descripción</small>
+                      </div>
+                      <span class="text-muted">20€</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                      <div>
+                        <h6 class="my-0">item3</h6>
+                        <small class="text-muted">descripcion</small>
+                      </div>
+                      <span class="text-muted">3€</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-light">
+                      <div class="text-success">
+                        <h6 class="my-0">Codigo de descuento</h6>
+                        <small class="text-success">DPS5</small>
+                      </div>
+                      <span class="text-success">-5€</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-light">
+                      <span>Total (EUR)</span>
+                      <strong>28€</strong>
+                    </li>
+                  </ul>
             </div>
         </div>
     </div>
